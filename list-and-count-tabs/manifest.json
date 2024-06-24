@@ -1,0 +1,29 @@
+{
+  "name": "Duplicate Tab Closer",
+  "description": "Chrome extension duplicate tab closer",
+  "version": "1.0",
+  "manifest_version": 3,
+  "action": {
+    "default_popup": "popup.html",
+    "icons": {
+      "16": "images/leafey-16.png",
+      "32": "images/leafey-32.png",
+      "48": "images/leafey-48.png",
+      "128": "images/leafey-128.png"
+    }
+  },
+  "host_permissions": ["https://developer.chrome.com/*"],
+  "permissions": [
+    "tabs"
+  ],
+  "content_scripts": [
+    {
+      "js": ["scripts/popup.js"],
+      "matches": [
+        "https://developer.chrome.com/docs/extensions/*",
+        "https://developer.chrome.com/docs/webstore/*",
+        "https://developer.chrome.com/*"
+      ]
+    }
+  ]
+}
