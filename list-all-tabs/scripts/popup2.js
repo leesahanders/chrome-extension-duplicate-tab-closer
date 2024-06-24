@@ -13,9 +13,6 @@
 // limitations under the License.
 
 //All tabs
-//By window
-//By group
-//How long been open
 
 //const tabs = await chrome.tabs.get({
 //  null
@@ -31,30 +28,31 @@
 //  ]
 //});
 
-//getOpenTabsCount = function (callback) {
-//  var count = 0;
-//  chrome.tabs.query({ url: options_url }, function (tabs) {
-//      count -= tabs.length;
-//      chrome.tabs.query({}, function (tabs) {
-//          count += tabs.length;
-//          callback(count);
-//      });
-//  });
-//};
+getOpenTabsCount = function (callback) {
+  var count = 0;
 
-//chrome.windows.getAll({populate:true},function(windows){
-//  var i=0;
-//  windows.forEach(function(window){
-//    window.tabs.forEach(function(tab){
-//      //collect all of the urls here, I will just log them instead
-//      console.log(tab.url);
-//      i++;
-//    });
-//  });
-//  console.log(i);
-//});
+  chrome.tabs.query({ url: options_url }, function (tabs) {
+      count -= tabs.length;
 
-const tabs = await chrome.tabs.get();
+      chrome.tabs.query({}, function (tabs) {
+          count += tabs.length;
+
+          callback(count);
+      });
+  });
+};
+
+chrome.windows.getAll({populate:true},function(windows){
+  var i=0;
+  windows.forEach(function(window){
+    window.tabs.forEach(function(tab){
+      //collect all of the urls here, I will just log them instead
+      console.log(tab.url);
+      i++;
+    });
+  });
+  console.log(i);
+});
 
   // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/Collator
   const collator = new Intl.Collator();

@@ -53,3 +53,17 @@ API reference: <https://developer.chrome.com/docs/extensions/reference/api/tabs>
 - duplicate-tab: <https://github.com/zertosh/duplicate-tab>
 
 - Manifest V2 - Tabs API extensions: <https://github.com/GoogleChrome/chrome-extensions-samples/tree/main/_archive/mv2/api/tabs>
+
+- Tab-Count-Extension: <https://github.com/cyburgee/Tab-Count-Extension>
+
+- chrome-tabs-count: <https://github.com/tomzx/chrome-tabs-count>
+
+- countTabs.js: <https://gist.github.com/jlewin/5343915>
+
+- extract-and-find-the-new-tab-from-the-browser-with-chrome-extention: <https://github.com/Farbod29/extract-and-find-the-new-tab-from-the-browser-with-chrome-extention>
+
+- tabcount: <https://github.com/x86driver/tabcount/>
+
+
+
+
