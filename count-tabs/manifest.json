@@ -1,0 +1,19 @@
+{
+  "name": "Count tabs",
+  "description": "Chrome extension tab counter",
+  "version": "1.0",
+  "manifest_version": 3,
+  "action": {
+    "default_popup": "popup.html",
+    "icons": {
+      "16": "images/leafey-16.png",
+      "32": "images/leafey-32.png",
+      "48": "images/leafey-48.png",
+      "128": "images/leafey-128.png"
+    }
+  },
+  "host_permissions": ["https://developer.chrome.com/*"],
+  "permissions": [
+    "tabs", "tabGroups"
+  ]
+}
