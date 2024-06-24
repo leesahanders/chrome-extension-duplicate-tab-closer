@@ -1,6 +1,6 @@
 {
-  "name": "Duplicate Tab Closer",
-  "description": "Chrome extension duplicate tab closer",
+  "name": "List and count tabs",
+  "description": "Chrome extension to list and count tabs",
   "version": "1.0",
   "manifest_version": 3,
   "action": {
@@ -14,16 +14,6 @@
   },
   "host_permissions": ["https://developer.chrome.com/*"],
   "permissions": [
-    "tabs"
-  ],
-  "content_scripts": [
-    {
-      "js": ["scripts/popup.js"],
-      "matches": [
-        "https://developer.chrome.com/docs/extensions/*",
-        "https://developer.chrome.com/docs/webstore/*",
-        "https://developer.chrome.com/*"
-      ]
-    }
+    "tabs", "tabGroups"
   ]
 }

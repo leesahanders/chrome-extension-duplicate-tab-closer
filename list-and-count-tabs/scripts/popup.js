@@ -34,33 +34,33 @@ const tabs = await chrome.tabs.query({
 //Display count of tabs
 console.log("tabsCount: " + tabs.length);
 
-lenText = 'Number of tabs:<strong> ' + tabs.length + '</strong>';
+const lenText = 'Number of tabs:<strong> ' + tabs.length + '</strong>';
 document.getElementById('windowTabs').innerHTML = lenText;
 
 // Display list of tabs
-  // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/Collator
-  const collator = new Intl.Collator();
-  tabs.sort((a, b) => collator.compare(a.title, b.title));
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/Collator
+const collator = new Intl.Collator();
+tabs.sort((a, b) => collator.compare(a.title, b.title));
 
-  const template = document.getElementById('li_template');
-  const elements = new Set();
-  for (const tab of tabs) {
-    const element = template.content.firstElementChild.cloneNode(true);
+const template = document.getElementById('li_template');
+const elements = new Set();
+for (const tab of tabs) {
+  const element = template.content.firstElementChild.cloneNode(true);
 
-    const title = tab.title.split('|')[0].trim();
-    const pathname = new URL(tab.url).pathname.slice('/docs'.length);
+  const title = tab.title.split('|')[0].trim();
+  const pathname = new URL(tab.url).pathname.slice('/docs'.length);
 
-    element.querySelector('.title').textContent = title;
-    element.querySelector('.pathname').textContent = pathname;
-    element.querySelector('a').addEventListener('click', async () => {
-      // need to focus window as well as the active tab
-      await chrome.tabs.update(tab.id, { active: true });
-      await chrome.windows.update(tab.windowId, { focused: true });
-    });
+  element.querySelector('.title').textContent = title;
+  element.querySelector('.pathname').textContent = pathname;
+  element.querySelector('a').addEventListener('click', async () => {
+    // need to focus window as well as the active tab
+    await chrome.tabs.update(tab.id, { active: true });
+    await chrome.windows.update(tab.windowId, { focused: true });
+  });
 
-    elements.add(element);
-  }
-  document.querySelector('ul').append(...elements);
+  elements.add(element);
+}
+document.querySelector('ul').append(...elements);
 
 
 
