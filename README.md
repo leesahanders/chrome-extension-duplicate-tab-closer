@@ -30,3 +30,5 @@ Chrome developer documentation on creating extensions: <https://developer.chrome
 
 Code examples: <https://github.com/GoogleChrome/chrome-extensions-samples/tree/main/functional-samples/tutorial.hello-world>
 
+Running scripts on every page: <https://developer.chrome.com/docs/extensions/get-started/tutorial/scripts-on-every-tab>
+
