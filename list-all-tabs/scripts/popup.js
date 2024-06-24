@@ -14,18 +14,11 @@
 
 //All tabs
 
-//Check for duplicates
-
-//Group duplicates by window
-
-//Group duplicates across all windows
-
-//Add a warning on tabs that are duplicated
-
-//const article = document.querySelector('article');
-
 //const tabs = await chrome.tabs.get({
+//  null
 //});
+
+//const tabs = chrome.tabs.get(null);
 
 const tabs = await chrome.tabs.query({
   url: [

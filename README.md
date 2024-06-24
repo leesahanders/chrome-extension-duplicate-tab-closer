@@ -1,5 +1,10 @@
 # chrome-extension-duplicate-tab-closer
 
+## TODO
+
+-[ ] whitelist certain sites
+
+
 ## Manually loading the extension
 
 1. Go to: <chrome://extensions>
@@ -33,6 +38,8 @@ Chrome developer documentation on creating extensions: <https://developer.chrome
 
 Resize an image: <https://imresizer.com/>
 
+API reference: <https://developer.chrome.com/docs/extensions/reference/api/tabs>
+
 ## Similar work
 
 - chrome-duplicate-tab-detector: <https://github.com/mbhutton/chrome-duplicate-tab-detector>
@@ -40,3 +47,9 @@ Resize an image: <https://imresizer.com/>
 - prevent-duplicate-tabs-chrome-extension: <https://github.com/Litee/prevent-duplicate-tabs-chrome-extension>
 
 - chrome-extension-close-duplicate-tabs: <https://github.com/heppokofrontend/chrome-extension-close-duplicate-tabs>
+
+- tab-dupectomy: <https://github.com/gcode-mirror/tab-dupectomy>
+
+- duplicate-tab: <https://github.com/zertosh/duplicate-tab>
+
+- Manifest V2 - Tabs API extensions: <https://github.com/GoogleChrome/chrome-extensions-samples/tree/main/_archive/mv2/api/tabs>

@@ -12,28 +12,12 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-//All tabs
-
-//Check for duplicates
-
-//Group duplicates by window
-
-//Group duplicates across all windows
-
-//Add a warning on tabs that are duplicated
-
-//const article = document.querySelector('article');
-
-//const tabs = await chrome.tabs.get({
-//});
-
 const tabs = await chrome.tabs.query({
-  url: [
-    'https://developer.chrome.com/docs/webstore/*',
-    'https://developer.chrome.com/docs/extensions/*',
-    "https://developer.chrome.com/*"
-  ]
-});
+    url: [
+      'https://developer.chrome.com/docs/webstore/*',
+      'https://developer.chrome.com/docs/extensions/*'
+    ]
+  });
 
   // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/Collator
   const collator = new Intl.Collator();
@@ -59,3 +43,11 @@ const tabs = await chrome.tabs.query({
   }
   document.querySelector('ul').append(...elements);
 
+  const button = document.querySelector('button');
+  button.addEventListener('click', async () => {
+    const tabIds = tabs.map(({ id }) => id);
+    if (tabIds.length) {
+      const group = await chrome.tabs.group({ tabIds });
+      await chrome.tabGroups.update(group, { title: 'DOCS' });
+    }
+  });
