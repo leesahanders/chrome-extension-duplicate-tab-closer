@@ -33,3 +33,10 @@ Chrome developer documentation on creating extensions: <https://developer.chrome
 
 Resize an image: <https://imresizer.com/>
 
+## Similar work
+
+- chrome-duplicate-tab-detector: <https://github.com/mbhutton/chrome-duplicate-tab-detector>
+
+- prevent-duplicate-tabs-chrome-extension: <https://github.com/Litee/prevent-duplicate-tabs-chrome-extension>
+
+- chrome-extension-close-duplicate-tabs: <https://github.com/heppokofrontend/chrome-extension-close-duplicate-tabs>
