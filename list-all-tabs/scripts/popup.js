@@ -54,17 +54,38 @@
 //  console.log(i);
 //});
 
-const tabs = await chrome.tabs.query({
-  url: [
-    'https://*',
-    'http://*'
-    //'https://developer.chrome.com/docs/webstore/*',
+//const tabs = await chrome.tabs.query({
+//  url: [
+//    'https://*',
+//    'http://*'
+//    //'https://developer.chrome.com/docs/webstore/*',
     //'https://developer.chrome.com/docs/extensions/*',
     //"https://developer.chrome.com/*"
-  ]
-});
+//  ]
+//});
 
 //const tabs = await chrome.tabs.get();
+
+//const tabs = await chrome.tabs.getAllInWindow()
+
+//const tabs = await chrome.tabs.getAllInWindow(newTab.windowId, function(tabs) {
+//  var duplicateTab = null;
+//  tabs.forEach(function(otherTab) {
+//      if (otherTab.id !== newTab.id && otherTab.url === newTab.url) {
+//          duplicateTab = otherTab;
+//      }
+//  });
+
+function countTabs() {
+  chrome.tabs.query({pinned: false}, function(tabs) {
+      console.log("tabsCount: " + tabs.length);
+      setBadge(tabs.length);
+  });
+};
+
+const tabs = await chrome.tabs.query({
+  pinned: false
+});
 
   // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/Collator
   const collator = new Intl.Collator();

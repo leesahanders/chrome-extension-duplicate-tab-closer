@@ -75,7 +75,7 @@ https://github.com/babyman/quick-tabs-chrome-extension/blob/b9012549a194b4d52ad8
 
 - OneTab: <https://github.com/svarts/OneTab>
 
-
+- chrome-limit-open-tabs: <https://github.com/sgeb/chrome-limit-open-tabs/tree/master>
 
 
 
