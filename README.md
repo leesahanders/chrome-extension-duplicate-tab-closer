@@ -1,0 +1,1 @@
+# chrome-extension-duplicate-tab-closer
