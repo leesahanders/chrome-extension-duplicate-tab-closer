@@ -54,7 +54,17 @@
 //  console.log(i);
 //});
 
-const tabs = await chrome.tabs.get();
+const tabs = await chrome.tabs.query({
+  url: [
+    'https://*',
+    'http://*'
+    //'https://developer.chrome.com/docs/webstore/*',
+    //'https://developer.chrome.com/docs/extensions/*',
+    //"https://developer.chrome.com/*"
+  ]
+});
+
+//const tabs = await chrome.tabs.get();
 
   // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/Collator
   const collator = new Intl.Collator();

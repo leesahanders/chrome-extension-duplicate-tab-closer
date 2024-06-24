@@ -64,6 +64,19 @@ API reference: <https://developer.chrome.com/docs/extensions/reference/api/tabs>
 
 - tabcount: <https://github.com/x86driver/tabcount/>
 
+- chrome-extension-iterate-through-all-tabs: <https://stackoverflow.com/questions/5409242/chrome-extension-iterate-through-all-tabs>
+
+- Get the currently open tabs in Google Chrome via the command line: <https://superuser.com/questions/489207/get-the-currently-open-tabs-in-google-chrome-via-the-command-line>
+
+- TabList: <https://github.com/ax330d/TabList>
+
+- quick-tabs-chrome-extension: <http://github.com/babyman/quick-tabs-chrome-extension>
+https://github.com/babyman/quick-tabs-chrome-extension/blob/b9012549a194b4d52ad811270d49db7d73c670ff/quick-tabs/popup.js#L443 looks helpful
+
+- OneTab: <https://github.com/svarts/OneTab>
+
+
+
 
 
 
