@@ -40,6 +40,8 @@ Resize an image: <https://imresizer.com/>
 
 API reference: <https://developer.chrome.com/docs/extensions/reference/api/tabs>
 
+tab-count: <https://github.com/developerish/tab-count/blob/master/js/popup.js>
+
 ## Similar work
 
 - chrome-duplicate-tab-detector: <https://github.com/mbhutton/chrome-duplicate-tab-detector>
@@ -76,6 +78,29 @@ https://github.com/babyman/quick-tabs-chrome-extension/blob/b9012549a194b4d52ad8
 - OneTab: <https://github.com/svarts/OneTab>
 
 - chrome-limit-open-tabs: <https://github.com/sgeb/chrome-limit-open-tabs/tree/master>
+
+- tab-time: <https://github.com/FedericoGentile/Tab-Time>
+
+- timing-the-amount-of-time-focused-on-a-tab-with-chrome-tab-api-with-chrome-exten: <https://stackoverflow.com/questions/73466815/timing-the-amount-of-time-focused-on-a-tab-with-chrome-tab-api-with-chrome-exten>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

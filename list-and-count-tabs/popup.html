@@ -5,6 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./popup.css" />
+    <style>
+      body {
+        width: 300px;
+        font-size: 12px;
+        font-family: Helvetica, Arial, sans-serif;
+        margin: 0;
+        padding: 0 10px 0 10px;
+      }
+      p.box {
+        background-color:#F0F0F0;
+        margin:10px;
+        padding:10px;
+        border:1px solid #606060;
+      }
+      a.redlink {
+        color: #FF0000;
+      }
+    </style>
   </head>
   <body>
     <template id="li_template">
@@ -16,8 +34,11 @@
       </li>
     </template>
 
-    <h1>Duplicate Tabs</h1>
-    <button>Group Tabs</button>
+    <h1>Tab Count</h1>
+    <p class='box' id='windowTabs'></p>
+    <table id='tabsTable'></table>
+
+    <h1>Tabs List - click to select</h1>
     <ul></ul>
 
     <script src="./scripts/popup.js" type="module"></script>

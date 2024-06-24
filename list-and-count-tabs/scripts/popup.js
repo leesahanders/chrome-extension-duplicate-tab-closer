@@ -31,6 +31,13 @@ const tabs = await chrome.tabs.query({
   pinned: false
 });
 
+//Display count of tabs
+console.log("tabsCount: " + tabs.length);
+
+lenText = 'Number of tabs:<strong> ' + tabs.length + '</strong>';
+document.getElementById('windowTabs').innerHTML = lenText;
+
+// Display list of tabs
   // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/Collator
   const collator = new Intl.Collator();
   tabs.sort((a, b) => collator.compare(a.title, b.title));
@@ -55,7 +62,7 @@ const tabs = await chrome.tabs.query({
   }
   document.querySelector('ul').append(...elements);
 
-  console.log("tabsCount: " + tabs.length);
+
 
 
 
