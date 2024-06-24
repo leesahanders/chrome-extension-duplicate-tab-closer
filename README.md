@@ -20,15 +20,16 @@ Access error logs through the extensions page and clicking on `errors`
 
 ## Samples
 
-### Hello world
-
 `samples/tutorial-hello-world` is from [the google developer samples](https://developer.chrome.com/docs/extensions/get-started/tutorial/hello-world)
+
+`samples/tutorial-reader` is from [the google developer samples](https://developer.chrome.com/docs/extensions/get-started/tutorial/scripts-on-every-tab)
+
+`samples/tutorial-tab-manager` is from [the google developer samples](https://developer.chrome.com/docs/extensions/get-started/tutorial/popup-tabs-manager)
+
 
 ## Resources
 
 Chrome developer documentation on creating extensions: <https://developer.chrome.com/docs/extensions/get-started/tutorial/hello-world>
 
-Code examples: <https://github.com/GoogleChrome/chrome-extensions-samples/tree/main/functional-samples/tutorial.hello-world>
-
-Running scripts on every page: <https://developer.chrome.com/docs/extensions/get-started/tutorial/scripts-on-every-tab>
+Resize an image: <https://imresizer.com/>
 
