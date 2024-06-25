@@ -74,10 +74,11 @@ for (const tab of tabs) {
   });
 
   element.querySelector('a').addEventListener('contextmenu', async () => {
-    console.log('right click fired.');
     //alert('right click fired.');
-
-
+    console.log('right click fired.');
+    //close selected tab
+    await chrome.tabs.update(tab.id, {"selected": true});
+    await chrome.tabs.remove(tab.id);
   });
 
   elements.add(element);
