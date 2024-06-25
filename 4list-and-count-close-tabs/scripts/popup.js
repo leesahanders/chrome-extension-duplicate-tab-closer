@@ -22,8 +22,7 @@ console.log("tabsCount: " + tabs.length);
 const lenText = 'Number of tabs:<strong> ' + tabs.length + '</strong>';
 document.getElementById('windowTabs').innerHTML = lenText;
 
-// Display list of tabs, left click to open, right click to close
-// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/Collator
+// Display list of tabs
 const collator = new Intl.Collator();
 tabs.sort((a, b) => collator.compare(a.title, b.title));
 
@@ -37,33 +36,6 @@ for (const tab of tabs) {
 
   element.querySelector('.title').textContent = title;
   element.querySelector('.pathname').textContent = pathname;
-  //original
-  //element.querySelector('a').addEventListener('click', async () => {
-    // need to focus window as well as the active tab
-  //  await chrome.tabs.update(tab.id, { active: true });
-  //  await chrome.windows.update(tab.windowId, { focused: true });
-  //});
-
-  //element.querySelector('a').addEventListener('mousedown', async () => {
-    //alert('mousedown fired.');
-
-    //if (button == 0) { // left click for mouse
-    //  alert("left click");
-    //}
-    //if (async.button == 0) { // left click for mouse
-    //    alert("left click");
-    //} else if (async.button == 1) { // wheel click for mouse
-    //    alert("wheel click");
-    //} else if (async.button == 2){   // right click for mouse
-    //    alert("right click");
-    //}
-
-  //left click to focus window on selected tab
-  //right click to close tab, right click to confirm
-    // need to focus window as well as the active tab
-    //await chrome.tabs.update(tab.id, { active: true });
-    //await chrome.windows.update(tab.windowId, { focused: true });
-  //});
 
   element.querySelector('a').addEventListener('click', async () => {
     //alert('left click fired.');
