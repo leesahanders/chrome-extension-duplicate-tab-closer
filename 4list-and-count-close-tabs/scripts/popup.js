@@ -77,8 +77,9 @@ for (const tab of tabs) {
     //alert('right click fired.');
     console.log('right click fired.');
     //close selected tab
-    //await chrome.tabs.update(tab.id, {"selected": true});
     await chrome.tabs.remove(tab.id);
+    //now we need to refresh our menu
+    window.location.reload();
   });
 
   elements.add(element);

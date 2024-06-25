@@ -40,7 +40,7 @@ Resize an image: <https://imresizer.com/>
 
 API reference: <https://developer.chrome.com/docs/extensions/reference/api/tabs>
 
-tab-count: <https://github.com/developerish/tab-count/blob/master/js/popup.js>
+tab-count was particularly helpful in addition to the google documentation: <https://github.com/developerish/tab-count/blob/master/js/popup.js>
 
 ## Similar work
 
