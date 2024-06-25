@@ -83,8 +83,7 @@ https://github.com/babyman/quick-tabs-chrome-extension/blob/b9012549a194b4d52ad8
 
 - timing-the-amount-of-time-focused-on-a-tab-with-chrome-tab-api-with-chrome-exten: <https://stackoverflow.com/questions/73466815/timing-the-amount-of-time-focused-on-a-tab-with-chrome-tab-api-with-chrome-exten>
 
-
-
+- How to manage asynchronous mouse events in Javascript: <https://stackoverflow.com/questions/63572301/how-to-manage-asynchronous-mouse-events-in-javascript>
 
 
 

@@ -43,23 +43,42 @@ for (const tab of tabs) {
   //  await chrome.tabs.update(tab.id, { active: true });
   //  await chrome.windows.update(tab.windowId, { focused: true });
   //});
-  element.querySelector('a').addEventListener('mousedown', async () => {
 
-    if (async.button == 0) { // left click for mouse
-        alert("left click");
-    } else if (async.button == 1) { // wheel click for mouse
-        alert("wheel click");
-    } else if (async.button == 2){   // right click for mouse
-        alert("right click");
-    }
+  //element.querySelector('a').addEventListener('mousedown', async () => {
+    //alert('mousedown fired.');
+
+    //if (button == 0) { // left click for mouse
+    //  alert("left click");
+    //}
+    //if (async.button == 0) { // left click for mouse
+    //    alert("left click");
+    //} else if (async.button == 1) { // wheel click for mouse
+    //    alert("wheel click");
+    //} else if (async.button == 2){   // right click for mouse
+    //    alert("right click");
+    //}
 
   //left click to focus window on selected tab
   //right click to close tab, right click to confirm
     // need to focus window as well as the active tab
     //await chrome.tabs.update(tab.id, { active: true });
     //await chrome.windows.update(tab.windowId, { focused: true });
+  //});
+
+  element.querySelector('a').addEventListener('click', async () => {
+    //alert('left click fired.');
+    console.log('left click fired.');
+    // need to focus window as well as the active tab
+    await chrome.tabs.update(tab.id, { active: true });
+    await chrome.windows.update(tab.windowId, { focused: true });
   });
 
+  element.querySelector('a').addEventListener('contextmenu', async () => {
+    console.log('right click fired.');
+    //alert('right click fired.');
+
+
+  });
 
   elements.add(element);
 }
