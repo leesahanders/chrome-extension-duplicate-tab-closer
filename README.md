@@ -1,9 +1,13 @@
 # chrome-extension-duplicate-tab-closer
 
-## TODO
+This extension lets you:
 
--[ ] whitelist certain sites
+- Count tabs
+- List tabs that are open with path
+ - Left click to focus on that tab
+ - Right click to close that tab
 
+I'm a tab hoarder, so this helps me be able to go through and quickly clean up!
 
 ## Manually loading the extension
 
